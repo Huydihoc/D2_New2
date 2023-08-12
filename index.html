@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="REFRESH" content="1800"/>
+    <script src="https://kit.fontawesome.com/eb4f8933e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Đi đâu - Tìm nơi du lịch</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
+</head>
+<body > 
+    <nav>
+      <div class="containers">
+        <ul>
+            <li class="Menus"><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><input type="text" placeholder="Tìm..."><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li id="adress-form"><a href="#">Địa Điểm</a> </li> 
+            <div class="adress-form">
+              <div class="adress-form-content" >
+                <h2>Chọn điểm tham quan <span id="adress-close">X Đóng</span></h2>
+                <form action="">
+                  <select name="" id="">
+                    <option value="#">--Chọn tỉnh</option>
+                    <option value="#">TP. Hồ Chí Minh</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="#">--Chọn thành phố</option>
+                    <option value="#">TP. Hồ Chí Minh</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="#">--Chọn quận huyện</option>
+                    <option value="#">TP. Hồ Chí Minh</option>
+                  </select>
+                  <button>Xác Nhận</button>
+                </form>
+              </div>
+            </div>
+         
+            <li><a href="Video.html">Video nổi bật</a></li>
+            <li><a href="#" title="Tính năng đang trong quá trình phát triển">Đặt Chỗ</a></li>
+            <li>
+              <select name="" id="Language">
+              <option value="#">Language</option>
+              <option value="#">Việt Nam</option>
+              <option value="#">English</option>
+              </select>
+            </li>
+            <li><a href="#"><button>Đăng Nhập</button></a></li>
+            <li><a href="#"><button>Đăng kí </button></a></li>
+           
+        </ul>
+        
+      </div>
+    </nav>
+     <!-------------------------------------->
+<div class="bodys" style="background-color: whitesmoke;">
+    <h2 style="font-family: 'Pacifico';font-size: 30px; text-align: center;">Các địa điểm nổi bậc</h2> 
+   <section class="parent-manual-slide">
+    <div class="manual-slide">
+      <img class="change-img" src="images/hà nội.jpg" alt="Hà Nội" title="Hà Nội">
+      <img class="change-img" src="images/đà nẵng.jpg" alt="Đà Nẵng" title="Đà Nẵng">
+      <img class="change-img" src="images/lào cai.jpg" alt="Lào Cai" title="Lào Cai">
+      <img class="change-img" src="images/tphcm.jpg" alt="Thành phố Hồ Chí Minh" title="Thành phố Hồ Chí Minh">
+      <img class="change-img" src="images/CanTho.jpg" alt="Cần Thơ" title="Cần Thơ">
+      <img class="change-img" src="images/PhuQuoc.jpg" alt="Phú Quốc" title="Phú Quốc">
+      <img class="change-img" src="images/DongThap.jpg" alt="Đồng Tháp" title="Đồng Tháp">
+
+      <button class="left-button" onclick="MoveImg(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="right-button" onclick="MoveImg(1)"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="badge" style="width:100%">
+      <span class="image-badge" onclick="currentDiv(1)"></span>
+      <span class="image-badge" onclick="currentDiv(2)"></span>
+      <span class="image-badge" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+    </section>
+ <!------------------MienBac-------------------->
+ <h2 style="font-family: 'Pacifico';font-size: 30px; left:10%;">Mọi người cũng thường tìm kiếm</h2>
+  <h3 style="font-family: 'Pacifico';font-size: 24px; left:10%; color: rgb(217, 132, 132);">Miền Bắc </h3>
+ <section class="manual-div" >
+    <div class="top-reseach" style="font-size: 16px;">
+
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/HoHoanKiem.jpg" alt="Hồ Hoàn Kiếm"></img>
+          <div class="caption">
+            <p>Hồ Hoàn Kiếm</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/CoDoHoaLu.jpg" alt="Khu di tích Hoa Lư"></img>
+          <div class="caption">
+            <p>Cố Đô Hoa Lư</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/VinhHaLong.jpg" alt="Vịnh Hạ Long"></img>
+          <div class="caption">
+            <p>Vịnh Hạ Long</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/TaXua.jpg" alt="Tà Xùa"></img>
+          <div class="caption">
+            <p>Tà Xùa</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+   <!---------------Miền Trung----------------------->
+   <h3 style="font-family: 'Pacifico';font-size: 24px; left:10%; color: rgb(217, 132, 132);">Miền Trung </h3>
+
+  <section class="manual-div;font-size:16px" >
+    <div class="top-reseach" style="font-size: 16px;">
+
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/CauRong'.jpg" alt="Cầu Rồng"></img>
+          <div class="caption">
+            <p>Cầu Rồng</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/HoiAn.jpg" alt="Hội An"></img>
+          <div class="caption">
+            <p>Hội An</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/PhongNhaKeBang.jpg" alt="Phong Nha Kẻ Bàng"></img>
+          <div class="caption">
+            <p>Động Phong Nha Kẻ Bàng</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/CayCauVang.jpg" alt="Cây Cầu Vàng"></img>
+          <div class="caption">
+            <p>Cây Cầu Vàng</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+ <!------------------Miền nam-------------------->
+ <h3 style="font-family: 'Pacifico';font-size: 24px; left:10%; color: rgb(217, 132, 132);">Miền Nam</h3>
+
+  <section class="manual-div" >
+    <div class="top-reseach" style="font-size: 16px;">
+
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/PhuQuy.jpg" alt="Phú Quý"></img>
+          <div class="caption">
+            <p>Phú Quý</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/tphcm.jpg" alt="Tp Hồ Chí Minh"></img>
+          <div class="caption">
+            <p>Tp. Hồ Chí Minh</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/PhuQuoc.jpg" alt="Phú Quốc"></img>
+          <div class="caption">
+            <p>Phú Quốc</p>
+          </div>
+        </a>
+      </div>
+      <div class="custom-div ">
+        <a href="#" target="_blank">
+          <img src="images/DongThap.jpg" alt="Đồng Tháp"></img>
+          <div class="caption">
+            <p>Đồng Tháp</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-------------------------------------->
+  <h2 style="font-family: 'Pacifico';font-size: 30px; left:10%; color: rgb(217, 132, 132);">Chi tiết về mọi miền tổ quốc </h3>
+
+  <section class="container">
+     <div class="custom-div ">
+      <a href="BacTrungBo.html" target="_blank">
+        <img src="images/bắctrungbo.jpg" alt="Bắc Trung Bộ"></img>
+        <div class="caption">
+          <p>Bắc Trung Bộ</p>
+        </div>
+      </a>
+      </div>
+     <div class="custom-div ">
+      <a href="TayBac.html" target="_blank">
+        <img src="images/tây bắc.jpg" alt="Tây Bắc"></img>
+          <div class="caption">
+            <p>Tây Bắc Bộ</p>
+          </div>
+      </a>    
+     </div>
+     <div class="custom-div ">
+      <a href="DongBacBo.html" target="_blank">
+        <img src="images/đông bắc.jpg" alt="Đông Bắc Bộ"></img>
+          <div class="caption">
+            <p> Đông Bắc Bộ</p>
+          </div>
+      </a>    
+     </div>
+     <div class="custom-div ">
+      <a href="DBSH.html" target="_blank">
+        <img src="images/ĐBS hồng.jpg" alt="Đồng Bằng Sông Hồng"></img>
+          <div class="caption">
+            <p> Đồng Bằng Sông Hồng</p>
+          </div>
+      </a>    
+     </div>
+     <div class="custom-div ">
+      <a href="NamTrungBo.html" target="_blank">
+        <img src="images/namtrungbo.jpg" alt="Nam Trung Bộ"></img>
+          <div class="caption">
+            <p> Nam Trung Bộ</p>
+          </div>
+      </a>    
+     </div>
+     <div class="custom-div ">
+      <a href="TayNguyen.html" target="_blank">
+        <img src="images/tâynguyen.jpg" alt="Tây Nguyên"></img>
+          <div class="caption">
+            <p> Tây Nguyên</p>
+          </div>
+      </a>    
+     </div>
+     <div class="custom-div ">
+      <a href="DongNamBo.html" target="_blank">
+        <img src="images/đôngnambo.jpg" alt="Đông Nam Bộ"></img>
+          <div class="caption">
+            <p> Đông Nam Bộ</p>
+          </div>
+      </a>    
+     </div>
+     <div class="custom-div ">
+      <a href="DBSCL.html" target="_blank">
+        <img src="images/tây bắc.jpg" alt="Đồng Bằng Sông Cửu Long"></img>
+          <div class="caption">
+            <p> Đồng Bằng Sông Cửu Long</p>
+          </div>
+      </a>    
+      </div>
+  </section>
+</div>
+
+  <script src="javacript.js"></script>
+    <button onclick="TopFunction()" id="top" title="GoOnTop"><i class="fa-solid fa-arrow-up"></i></button>
+   <footer>
+    <h3 >Thông tin liên hệ: 0964691216</h3> 
+    <ul>
+    <li><a href="#">Scroll Count: <span id="scrollCount">0</span></a></li> 
+    <li><a href="#"></a></li>
+    <li><a href="#"></a></li>
+    </ul>
+   </footer>
+</body>
+</html>
